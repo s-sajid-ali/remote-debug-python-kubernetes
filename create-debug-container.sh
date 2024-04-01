@@ -14,7 +14,7 @@ PATCH=$(cat <<EOF
   "spec": {
     "ephemeralContainers": [
       {
-        "image": "docker.io/martinheinz/python-debugger:v1.0",
+        "image": ghcr.io/s-sajid-ali/remote-debug-python-kubernetes/debug:main,
         "name": "debugger",
         "command": [
           "sleep"

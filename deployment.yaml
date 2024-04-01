@@ -26,8 +26,8 @@ spec:
     spec:
       containers:
       - name: app1
-        image: martinheinz/python-debugging-app1:v1.0
-        imagePullPolicy: Never
+        image: ghcr.io/s-sajid-ali/remote-debug-python-kubernetes/app1:main
+        imagePullPolicy: Always
         env:
           - name: API
             value: "http://app2:5000"
@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: martinheinz/python-debugging-app2:v1.0
-        imagePullPolicy: Never
+        image: ghcr.io/s-sajid-ali/remote-debug-python-kubernetes/app2:main
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
